@@ -1,5 +1,5 @@
 # Self-supervised Text Style Transfer using Cycle-Consistent Adversarial Networks
-This repository contains the code for the paper [Self-supervised Text Style Transfer using Cycle-Consistent Adversarial Networks](#), to appear in ACM Transactions on Intelligent Systems and Technology.
+This repository contains the code for the paper [Self-supervised Text Style Transfer using Cycle-Consistent Adversarial Networks](https://dl.acm.org/doi/10.1145/3678179), published in ACM Transactions on Intelligent Systems and Technology.
 
 It includes the Python package to train and test the CycleGAN architecture for Text Style Transfer described in the paper.
 
@@ -94,6 +94,18 @@ For any questions about the content of the paper or the implementation, you can 
 If you find this work useful, please cite our paper:
 
 ```bibtex
-... to be added upon publication of the paper ...
+@article{LaQuatra24TST,
+author = {La Quatra, Moreno and Gallipoli, Giuseppe and Cagliero, Luca},
+title = {Self-supervised Text Style Transfer using Cycle-Consistent Adversarial Networks},
+year = {2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {2157-6904},
+url = {https://doi.org/10.1145/3678179},
+doi = {10.1145/3678179},
+journal = {ACM Trans. Intell. Syst. Technol.},
+month = {jul},
+keywords = {Text Style Transfer, Sentiment transfer, Formality transfer, Cycle-consistent Generative Adversarial Networks, Transformers}
+}
 ```
 
