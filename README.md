@@ -78,7 +78,42 @@ CUDA_VISIBLE_DEVICES=0 python test.py --style_a=informal --style_b=formal --lang
 ```
 
 ## Model checkpoints
-The checkpoints of the best-performing models for both Text Style Transfer tasks will be made available on Hugging Face 🤗 in the following weeks. We will include the corresponding links to the model checkpoints below.
+All model checkpoints are available on Hugging Face 🤗 at the following [collection](https://huggingface.co/collections/ggallipoli/text-style-transfer-674b4bf7faef0be38154e535).
+
+### Formality transfer
+#### GYAFC dataset (Family & Relationships)
+
+|    model   |                       checkpoint                       |
+|:----------:|:------------------------------------------------------:|
+|  BART base | [informal-to-formal](https://huggingface.co/ggallipoli/bart-base_inf2for_family), [formal-to-informal](https://huggingface.co/ggallipoli/bart-base_for2inf_family) |
+| BART large | [informal-to-formal](https://huggingface.co/ggallipoli/bart-large_inf2for_family), [formal-to-informal](https://huggingface.co/ggallipoli/bart-large_for2inf_family) |
+|  T5 small  | [informal-to-formal](https://huggingface.co/ggallipoli/t5-small_inf2for_family), [formal-to-informal](https://huggingface.co/ggallipoli/t5-small_for2inf_family) |
+|   T5 base  | [informal-to-formal](https://huggingface.co/ggallipoli/t5-base_inf2for_family), [formal-to-informal](https://huggingface.co/ggallipoli/t5-base_for2inf_family) |
+|  T5 large  | [informal-to-formal](https://huggingface.co/ggallipoli/t5-large_inf2for_family), [formal-to-informal](https://huggingface.co/ggallipoli/t5-large_for2inf_family) |
+|  BERT base |                [style classifier](https://huggingface.co/ggallipoli/formality_classifier_gyafc_family)                |
+
+#### GYAFC dataset (Entertainment & Music)
+
+|    model   |                       checkpoint                       |
+|:----------:|:------------------------------------------------------:|
+|  BART base | [informal-to-formal](https://huggingface.co/ggallipoli/bart-base_inf2for_music), [formal-to-informal](https://huggingface.co/ggallipoli/bart-base_for2inf_music) |
+| BART large | [informal-to-formal](https://huggingface.co/ggallipoli/bart-large_inf2for_music), [formal-to-informal](https://huggingface.co/ggallipoli/bart-large_for2inf_music) |
+|  T5 small  | [informal-to-formal](https://huggingface.co/ggallipoli/t5-small_inf2for_music), [formal-to-informal](https://huggingface.co/ggallipoli/t5-small_for2inf_music) |
+|   T5 base  | [informal-to-formal](https://huggingface.co/ggallipoli/t5-base_inf2for_music), [formal-to-informal](https://huggingface.co/ggallipoli/t5-base_for2inf_music) |
+|  T5 large  | [informal-to-formal](https://huggingface.co/ggallipoli/t5-large_inf2for_music), [formal-to-informal](https://huggingface.co/ggallipoli/t5-large_for2inf_music) |
+|  BERT base |                [style classifier](https://huggingface.co/ggallipoli/formality_classifier_gyafc_music)                |
+
+### Sentiment transfer
+#### Yelp dataset
+
+|    model   |                       checkpoint                       |
+|:----------:|:------------------------------------------------------:|
+|  BART base | [negative-to-positive](https://huggingface.co/ggallipoli/bart-base_neg2pos), [positive-to-negative](https://huggingface.co/ggallipoli/bart-base_pos2neg) |
+| BART large | [negative-to-positive](https://huggingface.co/ggallipoli/bart-large_neg2pos), [positive-to-negative](https://huggingface.co/ggallipoli/bart-large_pos2neg) |
+|  T5 small  | [negative-to-positive](https://huggingface.co/ggallipoli/t5-small_neg2pos), [positive-to-negative](https://huggingface.co/ggallipoli/t5-small_pos2neg) |
+|   T5 base  | [negative-to-positive](https://huggingface.co/ggallipoli/t5-base_neg2pos), [positive-to-negative](https://huggingface.co/ggallipoli/t5-base_pos2neg) |
+|  T5 large  | [negative-to-positive](https://huggingface.co/ggallipoli/t5-large_neg2pos), [positive-to-negative](https://huggingface.co/ggallipoli/t5-large_pos2neg) |
+|  BERT base |                [style classifier](https://huggingface.co/ggallipoli/sentiment_classifier_yelp)                |
 
 ## License
 
@@ -96,16 +131,20 @@ If you find this work useful, please cite our paper:
 ```bibtex
 @article{LaQuatra24TST,
 author = {La Quatra, Moreno and Gallipoli, Giuseppe and Cagliero, Luca},
-title = {Self-supervised Text Style Transfer using Cycle-Consistent Adversarial Networks},
+title = {Self-supervised Text Style Transfer Using Cycle-Consistent Adversarial Networks},
 year = {2024},
+issue_date = {October 2024},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
+volume = {15},
+number = {5},
 issn = {2157-6904},
 url = {https://doi.org/10.1145/3678179},
 doi = {10.1145/3678179},
 journal = {ACM Trans. Intell. Syst. Technol.},
-month = {jul},
+month = nov,
+articleno = {110},
+numpages = {38},
 keywords = {Text Style Transfer, Sentiment transfer, Formality transfer, Cycle-consistent Generative Adversarial Networks, Transformers}
 }
 ```
-
